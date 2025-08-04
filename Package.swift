@@ -8,14 +8,14 @@ let package = Package(
     products: [
         .library(
             name: "NMapsMap",
-            targets: ["NMapsMapTarget"]),
+            targets: ["NMapsMap"]),
     ],
     dependencies: [
         .package(url: "https://github.com/navermaps/SPM-NMapsGeometry.git", from: "1.0.2")
     ],
     targets: [
         .target(
-            name: "NMapsMapTarget",
+            name: "NMapsMap",
             dependencies: [
                 .target(name: "NMapsMapBinary"),
                 .product(name: "NMapsGeometry", package: "SPM-NMapsGeometry")
